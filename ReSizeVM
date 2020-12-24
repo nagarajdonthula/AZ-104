@@ -1,0 +1,3 @@
+#vm = Get-AzVM -ResourceGroupName demo -VMName demovmnew
+$vm.HardwareProfile.VmSize ="Standard_D4s_V3"
+Update-AzVM -VM $vm -ResourceGroupName demo
